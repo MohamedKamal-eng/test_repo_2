@@ -8,7 +8,7 @@
 #include<util/delay.h>
 int main(void)
 {
-	DDRA=0b00001111; //PA0 Output
+	DDRB=0b00001111; //PA0 Output
 
 	while(1) //Super loop
 	{
@@ -16,7 +16,7 @@ int main(void)
 	  //  _delay_ms(1000);
 	  //  PORTA=0;
 	  //  _delay_ms(1000);
-		PORTA=0b00000001;
+		PORTB=0b00000001;
 		for(int i=0;i<4;i++)
     {
 		_delay_ms(250);
